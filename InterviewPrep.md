@@ -138,9 +138,9 @@ They help:
 
 You can pass data to components via props like this:
 
-
+```js
 <RestaurantCard name="KFC" rating={4.5} />
-
+```
 
 ---
 
@@ -154,9 +154,11 @@ function RestaurantCard(props) {
 ```
 
 - OR using destructuring
-- function RestaurantCard({ name }) {
-- return <h1>{name}</h1>;
-- }
+```js
+ function RestaurantCard({ name }) {
+  return <h1>{name}</h1>;
+ }
+```
 ---
 # ⚙️ What is a Config Driven UI?
 
