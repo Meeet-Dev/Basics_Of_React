@@ -138,7 +138,7 @@ They help:
 
 You can pass data to components via props like this:
 
-jsx
+
 <RestaurantCard name="KFC" rating={4.5} />
 
 
