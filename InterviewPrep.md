@@ -146,15 +146,15 @@ You can pass data to components via props like this:
 
 ## 🔹 Using Props in React
 
- Using props object
-function RestaurantCard(props) {
-  return <h1>{props.name}</h1>;
-}
+- Using props object
+- function RestaurantCard(props) {
+- return <h1>{props.name}</h1>;
+- }
 
- OR using destructuring
-function RestaurantCard({ name }) {
-  return <h1>{name}</h1>;
-}
+- OR using destructuring
+- function RestaurantCard({ name }) {
+- return <h1>{name}</h1>;
+- }
 ---
 # ⚙️ What is a Config Driven UI?
 
