@@ -29,7 +29,7 @@ Using ES6 enhances code clarity and makes React development smoother.
 
 ---
 
-## ● `{TitleComponent}` vs `{<TitleComponent/>}` vs `{<TitleComponent></TitleComponent>}` in JSX
+ ● `{TitleComponent}` vs `{<TitleComponent/>}` vs `{<TitleComponent></TitleComponent>}` in JSX
 
 | Syntax                         | Meaning                                                                 |
 |--------------------------------|-------------------------------------------------------------------------|
@@ -37,15 +37,12 @@ Using ES6 enhances code clarity and makes React development smoother.
 | `{<TitleComponent />}`         | Renders the component — invokes the function and outputs JSX.          |
 | `{<TitleComponent></TitleComponent>}` | Same as above — useful when passing children to the component. |
 
-Inside JSX, always use the angle bracket form to render components:
-jsx
-<TitleComponent />
+Inside JSX, always use the angle bracket form to render components:<TitleComponent />
 ---
 ## ● How can I write comments in JSX?
 
 Inside JSX blocks, wrap comments inside curly braces:
 
-jsx
 {/* This is a JSX comment */}
 
 ---
