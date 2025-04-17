@@ -182,3 +182,158 @@ resList.map((restaurant) => (
 - **Dynamic** – UI updates automatically based on data.
 
 
+
+## 📦 Exports in JavaScript
+
+### ✅ Named Export
+Used to export multiple variables/functions from a file.
+
+```js
+// file: utils.js
+export const add = (a, b) => a + b;
+export const subtract = (a, b) => a - b;
+```
+
+```js
+//Usage
+import { add, subtract } from './utils';
+```
+---
+
+### 🌟 Default Export
+Used when you want to export a single main thing from a file.
+
+```js
+// file: utils.js
+export default function multiply(a, b) {
+  return a * b;
+}
+```
+
+```js
+//Usage
+import multiply from './utils';
+```
+---
+### 🧺 * as Export
+Used to import everything from a module under a single namespace.
+
+```js
+import * as Utils from './utils';
+Utils.add(2, 3);
+```
+---
+### ⚙️ Importance of config.js
+The config.js file usually contains app-wide constants, like:
+
+API URLs
+
+App name/version
+
+Feature toggles
+
+It helps to keep code clean, centralized, and easy to manage.
+
+---
+
+### 🪝 What are React Hooks?
+Hooks are functions that let you use React features (like state, lifecycle, context) inside functional components.
+
+Examples:
+
+useState for state
+
+useEffect for lifecycle
+
+useContext for context
+
+---
+
+### 🔄 Why use useState Hook?
+useState allows you to add state to functional components.
+
+```js
+import { useState } from 'react';
+
+function Counter() {
+  const [count, setCount] = useState(0);
+  return (
+    <button onClick={() => setCount(count + 1)}>
+      Count: {count}
+    </button>
+  );
+}
+```
+---
+
+# 🧱 What is a Microservice?
+A microservice is a small, independently deployable service that handles a specific business function. It communicates with other services via APIs.
+
+# 🏛️ What is Monolith Architecture?
+A monolith is a single, tightly-coupled application where all features are in one codebase and deploy together.
+
+---
+## 🆚 Monolith vs Microservice
+
+| Feature      | Monolith                  | Microservices                         |
+|--------------|---------------------------|----------------------------------------|
+| Deployment   | Single unit               | Independent services                   |
+| Scalability  | Hard to scale parts       | Easy to scale individually             |
+| Development  | Slower for large apps     | Parallel team development possible     |
+| Maintenance  | Risky updates             | Easier to isolate and fix              |
+
+---
+
+## 🎣 Why use useEffect Hook?
+useEffect handles side effects (like API calls, subscriptions, DOM updates).
+
+```js
+import { useEffect, useState } from 'react';
+
+function User() {
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    fetch('/api/user')
+      .then(res => res.json())
+      .then(data => setUser(data));
+  }, []); // empty dependency = run only once
+}
+```
+
+---
+
+## ❓ What is Optional Chaining?
+Optional chaining (?.) lets you safely access nested properties without crashing if something is undefined or null.
+
+```js
+const user = { name: 'Alex', address: null };
+console.log(user.address?.city); // undefined (no error)
+```
+
+## 💫 What is Shimmer UI?
+
+Shimmer UI is a **loading placeholder** that mimics the structure of actual content while the data is loading — often animated with a shimmer effect.
+
+Used to **enhance UX** during data fetching.
+
+---
+
+## 🔣 JS Expression vs JS Statement
+
+| Type       | Example            | Returns a value? |
+|------------|--------------------|------------------|
+| Expression | `1 + 2`, `x === 3` | ✅ Yes           |
+| Statement  | `if`, `for`, `while` | ❌ No          |
+
+```js
+// Expression
+const sum = 1 + 2;
+
+// Statement
+if (sum === 3) {
+  console.log("Correct");
+}
+```
+
+
