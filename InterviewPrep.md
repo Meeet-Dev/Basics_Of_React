@@ -130,8 +130,6 @@ They help:
 
 ---
 
-# ⚛️ React: Props and Config Driven UI
-
 ---
 
 ## 🔹 Using Props in React
@@ -335,6 +333,8 @@ if (sum === 3) {
   console.log("Correct");
 }
 ```
+---
+
 ## 🔀 Conditional Rendering in React
 
 Render UI based on conditions.
@@ -348,7 +348,7 @@ function Greeting({ isLoggedIn }) {
   );
 }
 ```
-
+---
 ## 🌐 What is CORS?
 CORS (Cross-Origin Resource Sharing) is a browser security feature that restricts HTTP requests made from one origin (domain) to another unless the target server allows it.
 
