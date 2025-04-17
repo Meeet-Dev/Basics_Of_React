@@ -185,7 +185,7 @@ resList.map((restaurant) => (
 
 ## 📦 Exports in JavaScript
 
-### ✅ Named Export
+## ✅ Named Export
 Used to export multiple variables/functions from a file.
 
 ```js
@@ -200,7 +200,7 @@ import { add, subtract } from './utils';
 ```
 ---
 
-### 🌟 Default Export
+## 🌟 Default Export
 Used when you want to export a single main thing from a file.
 
 ```js
@@ -215,7 +215,7 @@ export default function multiply(a, b) {
 import multiply from './utils';
 ```
 ---
-### 🧺 * as Export
+## 🧺 * as Export
 Used to import everything from a module under a single namespace.
 
 ```js
@@ -223,7 +223,7 @@ import * as Utils from './utils';
 Utils.add(2, 3);
 ```
 ---
-### ⚙️ Importance of config.js
+## ⚙️ Importance of config.js
 The config.js file usually contains app-wide constants, like:
 
 API URLs
@@ -236,7 +236,7 @@ It helps to keep code clean, centralized, and easy to manage.
 
 ---
 
-### 🪝 What are React Hooks?
+## 🪝 What are React Hooks?
 Hooks are functions that let you use React features (like state, lifecycle, context) inside functional components.
 
 Examples:
@@ -249,7 +249,7 @@ useContext for context
 
 ---
 
-### 🔄 Why use useState Hook?
+## 🔄 Why use useState Hook?
 useState allows you to add state to functional components.
 
 ```js
@@ -266,7 +266,7 @@ function Counter() {
 ```
 ---
 
-# 🧱 What is a Microservice?
+## 🧱 What is a Microservice?
 A microservice is a small, independently deployable service that handles a specific business function. It communicates with other services via APIs.
 
 # 🏛️ What is Monolith Architecture?
