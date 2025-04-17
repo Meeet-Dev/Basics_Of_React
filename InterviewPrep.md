@@ -160,7 +160,7 @@ function RestaurantCard(props) {
  }
 ```
 ---
-# ⚙️ What is a Config Driven UI?
+## ⚙️ What is a Config Driven UI?
 
 A **Config Driven UI** is a user interface that is built dynamically based on configuration or data, rather than being hardcoded.
 
@@ -181,7 +181,7 @@ resList.map((restaurant) => (
 - **Reusable** – Components adapt to different data sets.
 - **Dynamic** – UI updates automatically based on data.
 
-
+---
 
 ## 📦 Exports in JavaScript
 
