@@ -335,5 +335,42 @@ if (sum === 3) {
   console.log("Correct");
 }
 ```
+## 🔀 Conditional Rendering in React
+
+Render UI based on conditions.
+
+```jsx
+function Greeting({ isLoggedIn }) {
+  return (
+    <div>
+      {isLoggedIn ? <h1>Welcome back!</h1> : <h1>Please log in.</h1>}
+    </div>
+  );
+}
+```
+
+## 🌐 What is CORS?
+CORS (Cross-Origin Resource Sharing) is a browser security feature that restricts HTTP requests made from one origin (domain) to another unless the target server allows it.
+
+---
+
+## 🕰️ What is async and await?
+Used to handle asynchronous operations (like API calls) in a readable way.
+
+```js
+async function fetchData() {
+  const res = await fetch('https://api.com/data');
+  const json = await res.json();
+  console.log(json);
+}
+```
+---
+
+## 📥 const json = await data.json();
+This line parses the raw response (data) from fetch into usable JSON format.
+
+fetch() returns a Response object.
+
+.json() extracts JSON body content.
 
 
